@@ -1,4 +1,5 @@
 <?php
+
 //This links this page to database.php 
 require_once (__DIR__ . "/../model/database.php");
 
@@ -14,18 +15,22 @@ if ($connection->connect_error) {
 //Linking the database
 $exists = $connection->select_db($database);
 
-//to check if the database exists
-if(!$exists){
+//has elements to check if database  exists and create the database
+if (!$exists) {
     $query = $connection->query("CREATE DATABASE $database");
-    
-    if($query){
-        echo "YEA DATABASE CREATED: " . $database;
+    //This will create the database and if itts created already it will  go to the else statement 
+    if ($query) {
+        echo "Database Created: " . $database;
     }
-}
+    //If database already exists it will write Database Already Exists on the screen
+ } else {
+    echo "Database Already Exists";
+ }
 
- else {
-        echo "DATA BASE ALREADY EXISTS";
-    }
-
+ 
+ $query = $connection->query("CREATE TABLE posts ("
+         . "id int(11) NOT NULL AUTO_INCREMENT," 
+         . "title varchar(255) NOT NULL");
+ 
 //closing the connection
 $connection->close();
