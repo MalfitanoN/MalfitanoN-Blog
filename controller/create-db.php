@@ -27,10 +27,18 @@ if (!$exists) {
     echo "Database Already Exists";
  }
 
- 
+ //This is for the blog posts only
  $query = $connection->query("CREATE TABLE posts ("
          . "id int(11) NOT NULL AUTO_INCREMENT," 
-         . "title varchar(255) NOT NULL");
+         . "title varchar(255) NOT NULL,"
+         . "post text NOT NULL,"
+         . "PRIMARY KEY (id))");
  
+    if($query){
+        echo " Sucessfully Created Table: Posts";
+    }
+  else {
+        "<p>$connection->error</p>";
+ }
 //closing the connection
 $connection->close();
