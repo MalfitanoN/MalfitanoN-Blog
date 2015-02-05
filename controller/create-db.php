@@ -34,11 +34,13 @@ if (!$exists) {
          . "post text NOT NULL,"
          . "PRIMARY KEY (id))");
  
+ //When the table posts is first created
     if($query){
         echo " Sucessfully Created Table: Posts";
     }
+    //this tells you the what its connected to which is the Table Posts
   else {
-        "<p>$connection->error</p>";
- }
+       echo "<p>$connection->error</p>";
+  }
 //closing the connection
 $connection->close();
