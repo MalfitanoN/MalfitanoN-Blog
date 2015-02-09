@@ -1,7 +1,7 @@
 <?php
 
 //This links this page to database.php 
-require_once (__DIR__ . "/../model/database.php");
+require_once (__DIR__ . "/../model/config.php");
 
 //this connnects the host username and password 
 $connection = new mysqli($host, $username, $password);
