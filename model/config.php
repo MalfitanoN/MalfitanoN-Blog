@@ -14,4 +14,7 @@ $path = "/MalfitanoN-Blog/";
     
     //Data base name
     $database  = "blog_db";
+    
+    //connection to new database
+    $connection = new Database($host, $username, $password, $database);
 
