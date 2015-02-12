@@ -1,5 +1,10 @@
 <?php
 
+//This links this page to database.php 
+require_once (__DIR__ . "/database.php");
+
+session_start();
+
 //this is for the post.php page and can  be searched for in the xampp folder
 $path = "/MalfitanoN-Blog/";
 
@@ -15,6 +20,9 @@ $path = "/MalfitanoN-Blog/";
     //Data base name
     $database  = "blog_db";
     
-    //connection to new database
-    $connection = new Database($host, $username, $password, $database);
+    if(!isset($_SESSION["connection"])){
+        //connection to new database
+        $connection = new Database($host, $username, $password, $database);
 
+        $_SESSION["connection"] = $connection;
+    }
