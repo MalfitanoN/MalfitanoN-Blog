@@ -1,8 +1,9 @@
 <?php
+    //This connects the header.php page to this page
+    require_once(__DIR__ . '/view/header.php');
+    
+//This connects the form.php page to this page
+    require_once(__DIR__ . '/view/login-form.php');
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+//This connects the footer.php page to this page
+    require_once(__DIR__ . '/view/footer.php');

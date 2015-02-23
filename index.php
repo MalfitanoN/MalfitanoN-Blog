@@ -1,10 +1,13 @@
 <?php
 //This connects the header.php page to this page
+    require_once(__DIR__ . '/controller/login-verify.php');
+
+//This connects the header.php page to this page
     require_once(__DIR__ . '/view/header.php');
-    
+    if(authenticateUser()){
 //This connects the navigation.php page to this page
     require_once(__DIR__ . '/view/navigation.php');
-    
+    }
 //This connects the create_db.php page to this page
     require_once(__DIR__ . '../controller/create-db.php');
     
