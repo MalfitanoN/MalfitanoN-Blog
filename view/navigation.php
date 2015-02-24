@@ -6,7 +6,6 @@
 
 <nav>
     <ul>
-        <h1>NICK RULEZ!!!!!!!!!!111111111!!!1!!1!!!</h1>
         <!--this is so it will link to the Blog post  form and this can be modified at any time-->
         <li><a href="<?php echo $path . "post.php"?>">Blog Post Form</a></li>
     </ul>
