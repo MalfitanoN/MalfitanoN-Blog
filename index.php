@@ -2,6 +2,7 @@
 <link type="text/css" rel="stylesheet" href="Design.css">
 <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
 <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+<link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
 
 <div class="jumbotron" style="height: 500px;">
     <h1>

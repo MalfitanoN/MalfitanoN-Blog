@@ -17,7 +17,7 @@ $query = $_SESSION["connection"]->query("INSERT INTO users SET "
         . "password = '$hashedPassword',"
         . "salt = '$salt'");
 
-if($query) {
+if ($query) {
     echo "Sucessfully Created User: $username";
     header('Location: http://localhost/MalfitanoN-Blog/index.php');
 } else {

@@ -1,0 +1,47 @@
+/*cursor is activated so when you hover over any of the page it works*/
+body {
+    cursor: url('Pics/mushroom1.png'), default;
+}
+
+/* contanier perspective */
+.flip-container {
+    perspective: 1000;
+}
+/*it flips when you hhover over it */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane moved in front*/
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back hidden */
+.back {
+    transform: rotateY(180deg);
+}

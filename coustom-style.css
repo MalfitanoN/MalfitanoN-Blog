@@ -1,0 +1,54 @@
+/*spacing and grid*/
+div {
+    font-family: 'Ceviche One', cursive;
+    border-style: hidden;
+    border-width: 5px;
+    padding: 30px;
+}
+
+/*Background picture*/
+
+body {
+    background-image: url("Pics/BackGround.jpg")
+}
+
+/*all images*/
+img {
+    border: 4px solid blue;
+}
+
+/*headers for bootstrap HTML5 and CSS on technology page*/
+.Header3 {
+    font-family: 'Ceviche One', cursive;
+    font-size: 27px;
+    margin-left: 480px; 
+}
+
+/*all navagation/links*/
+a {
+    color: darkblue;
+}
+
+/*Makes all text bigger*/
+.col-xs-9 {
+    font-size: 23px;
+}
+
+/*Jumbotron at top of page*/
+.jumbotron {
+    font-family: 'Ceviche One', cursive;
+    text-align: center;
+    background-color: #c4e3f3;
+}
+/*top border on moving text at the bottom of the screen*/
+.movingtext {
+    font-family: 'Ceviche One', cursive;
+    border-top: solid #285e8e;
+    border-width: 3px;
+    font-size: 20px;
+}
+
+/*cursor is activated so when you hover over any of the page it works*/
+html {
+	cursor: url("Pics/mushroom1.png"), default;
+}

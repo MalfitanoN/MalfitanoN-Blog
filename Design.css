@@ -1,15 +1,16 @@
-
 #Title{
     color: #23527c;  
 }
 
 h2{
     text-align: center;
+    font-family: 'Exo', sans-serif;
 }
 
 h3{
     text-align: center;
     font-size: 19px;
+    font-family: 'Exo', sans-serif;
 }
 
 .jumbotron{
