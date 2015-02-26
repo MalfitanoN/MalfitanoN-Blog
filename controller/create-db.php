@@ -11,6 +11,7 @@ $query = $_SESSION["connection"]->query("CREATE TABLE posts ("
         . "post text NOT NULL,"
         . "PRIMARY KEY (id))");
 
+//this is for the register page
 $query = $_SESSION["connection"]->query("CREATE TABLE users("
         . "id int(11) NOT NULL AUTO_INCREMENT,"
         . "username varchar(30) NOT NULL,"

@@ -63,6 +63,7 @@ class Database {
     public function query($string) {
         $this->openConnection();
 
+      //this will conect the string
         $query = $this->connection->query($string);
 
         if (!$query) {

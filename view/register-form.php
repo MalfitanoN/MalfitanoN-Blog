@@ -79,7 +79,7 @@ require_once(__DIR__ . "/../model/config.php");
                 <div class="form-group">
                     <label for="username" class="col-sm-2 control-label"></label>
                     <div class="col-sm-10">
-                        <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="username">
+                        <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username">
                     </div>
                 </div>
                 <div class="form-group">
