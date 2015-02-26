@@ -11,7 +11,7 @@ if($result){
         echo "<div class='post'>";
         echo "<h2>" . $row['title'] . "</h2>";
         echo "<br />";
-        echo "<p>" . $row['post'] . "</p>";
+        echo "<h3>" . $row['post'] . "</h3>";
         echo "<br />";
         echo "</div";
     }

@@ -1,4 +1,351 @@
-background-image{
-    url("")
-    
+
+#Title{
+    color: #23527c;  
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 19px;
+}
+
+.jumbotron{
+    background-image: url("Pictures/Blurry pic.jpg");
+}
+.Background{
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #161616;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.open {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.2s linear;
+}
+
+.open:hover { opacity: 0.8; }
+
+.open span {
+    display: block;
+    float: left;
+    clear: both;
+    height: 4px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.open span:nth-child(1) {
+    margin-top: 10px;
+    z-index: 9;
+}
+
+.open span:nth-child(2) { margin-top: 25px; }
+
+.open span:nth-child(3) { margin-top: 40px; }
+
+.sub-menu {
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    height: 0;
+    width: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(38, 84, 133, 0.54);
+    border-radius: 50%;
+    z-index: 18;
+    overflow: hidden;
+}
+
+.sub-menu li {
+    display: block;
+    float: right;
+    clear: both;
+    height: auto;
+    margin-right: -160px;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sub-menu li:first-child { margin-top: 180px; }
+
+.sub-menu li:nth-child(1) { -webkit-transition-delay: 0.05s; }
+
+.sub-menu li:nth-child(2) { -webkit-transition-delay: 0.10s; }
+
+.sub-menu li:nth-child(3) { -webkit-transition-delay: 0.15s; }
+
+.sub-menu li:nth-child(4) { -webkit-transition-delay: 0.20s; }
+
+.sub-menu li:nth-child(5) { -webkit-transition-delay: 0.25s; }
+
+.sub-menu li a {
+    color: #fff;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    float: left;
+    line-height: 40px;
+}
+
+.oppenned .sub-menu {
+    opacity: 1;
+    height: 450px;
+    width: 325px;
+}
+
+.oppenned span:nth-child(2) { overflow: visible; }
+
+.oppenned span:nth-child(1),
+.oppenned span:nth-child(3) {
+    z-index: 100;
+    transform: rotate(45deg);
+}
+
+.oppenned span:nth-child(1) { transform: rotate(45deg) translateY(12px) translateX(12px); }
+
+.oppenned span:nth-child(2) {
+    height: 440px;
+    width: 300px;
+    right: -160px;
+    top: -160px;
+    border-radius: 50%;
+    background-color: rgba(38, 84, 133, 0.54);
+}
+
+.oppenned span:nth-child(3) { transform: rotate(-45deg) translateY(-10px) translateX(10px); }
+
+.oppenned li { margin-right: 168px; }
+
+//Large Text
+
+.box-with-text {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; }
+
+/* Other stuff */
+body {
+    background: transparent;
+}
+
+.box-with-text {
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    font: 26vmax/.85 Open Sans, Impact;
+    margin: 0 0 100px; }
+
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    background: #fff;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+a {
+    color: #e06084;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover, a:focus,
+.codrops-demos a.current-demo {
+    color: #ac3557;
+}
+
+.dark { color: #fff; }
+
+.hidden {
+    position: absolute;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Header */
+.codrops-header {
+    padding: 3em 1em 4em;
+    text-align: center;
+}
+
+.codrops-header h1 {
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    letter-spacing: -1px;
+}
+
+.codrops-header h1 span {
+    display: block;
+    font-size: 0.45em;
+    font-weight: 700;
+    padding: 1em;
+    opacity: 0.6;
+}
+
+/* Top Navigation Style */
+.codrops-links {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.codrops-links::after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: rgba(155,155,155,0.6);
+    content: '';
+    -webkit-transform: rotate3d(0,0,1,22.5deg);
+    transform: rotate3d(0,0,1,22.5deg);
+}
+
+.codrops-icon {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0em 0;
+    width: 1.5em;
+    text-decoration: none;
+}
+
+.codrops-icon span {
+    display: none;
+}
+
+.codrops-icon:before {
+    margin: 0 5px;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'codropsicons';
+    line-height: 1;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon--drop:before {
+    content: "\e001";
+}
+
+.codrops-icon--prev:before {
+    content: "\e004";
+}
+
+/* Demo links */
+.codrops-demos {
+    margin: 2em 0 0;
+}
+
+.codrops-demos a {
+    display: inline-block;
+    margin: 0 0.5em;
+    font-size: 60%;
+    text-transform: uppercase;
+}
+/* Content */
+.content {
+    text-align: center;
+    position: relative;
+}
+
+/* Related demos */
+.content-related {
+    text-align: center;
+    font-weight: bold;
+    padding: 3em 0;
+}
+
+.media-item {
+    display: inline-block;
+    padding: 1em;
+    vertical-align: top;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.media-item__img {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.media-item:hover .media-item__img,
+.media-item:focus .media-item__img {
+    opacity: 1;
+}
+
+.media-item__title {
+    font-size: 1em;
+    margin: 0;
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 50em) {
+    .codrops-header {
+        padding: 3em 10% 4em;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .codrops-header h1 {
+        font-size: 2.8em;
+    }
 }

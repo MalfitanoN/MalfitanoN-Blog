@@ -13,6 +13,9 @@ if ($query->num_rows == 1) {
 
     if ($row["password"] === crypt($password, $row["salt"])) {
         $_SESSION["authenticated"] = true;
+        
+ header('Location: http://localhost/MalfitanoN-Blog/index.php');
+        
         echo '<p>Login Successful</p>';
     } else {
         echo '<p>Invalid Username/Password</p>';

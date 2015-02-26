@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 class Database {
 
@@ -39,7 +39,7 @@ class Database {
             }
 //If database already exists it will write Database Already Exists on the screen
         } else {
-            echo "Database Already Exists";
+            echo "You Have been logged Out";
         }
     }
 
@@ -64,8 +64,8 @@ class Database {
         $this->openConnection();
 
         $query = $this->connection->query($string);
-        
-        if(!$query){
+
+        if (!$query) {
             $this->error = $this->connection->error;
         }
 

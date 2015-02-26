@@ -1,6 +1,6 @@
 <?php
 
-//This connects the confi.php page to this page
+//This connects the config.php page to this page
 require_once(__DIR__ . "/../model/config.php");
 
 function authenticateUser(){

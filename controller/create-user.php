@@ -19,6 +19,7 @@ $query = $_SESSION["connection"]->query("INSERT INTO users SET "
 
 if($query) {
     echo "Sucessfully Created User: $username";
+    header('Location: http://localhost/MalfitanoN-Blog/index.php');
 } else {
     "<p>" . $_SESSION["connection"]->error . "</p>";
 }
