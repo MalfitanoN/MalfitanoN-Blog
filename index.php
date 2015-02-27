@@ -1,9 +1,11 @@
+<!--links to bootstap and css and fonts-->
 <link rel="icon" href="http://fc08.deviantart.net/fs70/i/2012/091/d/9/troll_face_ios_style_icon_image_by_farias2696-d4unc2r.png" type="image/png">
 <link type="text/css" rel="stylesheet" href="Design.css">
 <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
 <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
 <link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
 
+<!--this is th jumbotron withh text-->
 <div class="jumbotron" style="height: 500px;">
     <h1>
         <div class="container">
@@ -33,9 +35,7 @@ require_once(__DIR__ . '/view/footer.php');
 require_once(__DIR__ . "/controller/read-posts.php");
 ?>
 
-<script type="text/javascript"
-        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></div>
+<!--this is the links in the nav bar-->
 <div class="open"> <span class="cls"></span> <span>
         <ul class="sub-menu ">
             <li> <a href="login.php">Login</a> </li>
@@ -45,7 +45,10 @@ require_once(__DIR__ . "/controller/read-posts.php");
         </ul>
     </span> <span class="cls"></span> </div>
 
+    <!--link to  jquery-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+
+<!--this is th js for the nav bar-->
 <script>
             $(document).ready(function() {
                 $(document).delegate('.open', 'click', function(event) {
@@ -62,6 +65,7 @@ require_once(__DIR__ . "/controller/read-posts.php");
             });
 </script>
 
+<!--this is th js for the nav bar-->
 <script type="text/javascript">
 
     var _gaq = _gaq || [];

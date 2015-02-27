@@ -20,9 +20,7 @@ if (!authenticateUser()) {
 <!--title-->
 <h1>Create a Blog Post</h1>
 
-<script type="text/javascript"
-        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></div>
+<!--this is the links in the nav bar-->
 <div class="open"> <span class="cls"></span> <span>
         <ul class="sub-menu ">
             <li> <a href="index.php">Home</a> </li>
@@ -32,23 +30,27 @@ if (!authenticateUser()) {
         </ul>
     </span> <span class="cls"></span> </div>
 
+<!--this links jquery-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+
+<!--this all the javascript for the nav bar-->
 <script>
-            $(document).ready(function() {
-                $(document).delegate('.open', 'click', function(event) {
-                    $(this).addClass('oppenned');
-                    event.stopPropagation();
-                })
-                $(document).delegate('body', 'click', function(event) {
-                    $('.open').removeClass('oppenned');
-                })
-                $(document).delegate('.cls', 'click', function(event) {
-                    $('.open').removeClass('oppenned');
-                    event.stopPropagation();
-                });
-            });
+    $(document).ready(function() {
+        $(document).delegate('.open', 'click', function(event) {
+            $(this).addClass('oppenned');
+            event.stopPropagation();
+        })
+        $(document).delegate('body', 'click', function(event) {
+            $('.open').removeClass('oppenned');
+        })
+        $(document).delegate('.cls', 'click', function(event) {
+            $('.open').removeClass('oppenned');
+            event.stopPropagation();
+        });
+    });
 </script>
 
+<!--more js for nav bar-->
 <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -67,12 +69,14 @@ if (!authenticateUser()) {
 
 </script>
 
+<!--this links to the create-posts page-->
 <form method="post" action="<?php echo $path . "controller/create-post.php" ?>">
 
     <div class="container">
         <div class="row">
             <div class="col-xs-3">
             </div>
+            <!--this is the title box-->
             <div class="col-xs-6"> 
                 <input type="text" name="title" class="form-control" placeholder="Title">
                 <div class="form-group">
@@ -84,6 +88,7 @@ if (!authenticateUser()) {
                         </div>
                     </div>
                 </div>
+                <!--this is the text box-->
                 <textarea name="post" class="form-control" placeholder="Text" rows="3"></textarea>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
@@ -94,6 +99,7 @@ if (!authenticateUser()) {
                         </div>
                     </div>
                 </div>
+                <!--the button to post-->
                 <div class="container">
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
